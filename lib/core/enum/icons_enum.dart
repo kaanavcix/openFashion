@@ -1,0 +1,33 @@
+enum IconNames {
+  backward,
+  bleach,
+  call,
+  close,
+  doordelivery,
+  down,
+  export,
+  filter,
+  forward,
+  forwardarrow,
+  gallery,
+  gridview,
+  heart,
+  listview,
+  location,
+  logo,
+  lowtemperature,
+  menu,
+  plus,
+  refresh,
+  resize,
+  search,
+  shipping,
+  shoppingbag,
+  tag,
+  tumblerdry,
+  up,
+  voucher,
+  wash
+}
+
+
