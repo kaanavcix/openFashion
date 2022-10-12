@@ -1,16 +1,11 @@
 # flutter_category
 
-A new Flutter project.
+Herkese merhaba arkadaşlar karşınıza bir e-commerce örneği ile karşınızdayım. State managment olarak Flutter Bloc Cubit ve Provider paketlerini kullandım. Route Manager olarak getx route manager kullandım kolaylık sağladığını düşündüğüm için umarım projelerinizi kullanırken güzel örnekler barınıdırır
 
-## Getting Started
+Rest Api Olarak >   [GitHub Pages](https://fakestoreapi.com/) sitesindeki APi Kullanımızdan faydalındım.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Projede Kullandığım Paketler >
+DİO (NETWORK)
+BLOC CUBIT(STATE MANAGMENT)
+GETX(ROUTE MANAGER)
+GOOGLE_FONTS(FONT KULLANIMI)
