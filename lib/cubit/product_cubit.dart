@@ -33,7 +33,7 @@ class ProductCubit extends Cubit<ProductState> {
     try {
       changeLoading();
       List<ProductModel> model = await dioService.inCategories(data);
-      print(model);
+      
       changeLoading();
       emit(ProductCompeleted(model));
     } catch (message) {

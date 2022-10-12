@@ -10,6 +10,8 @@ import 'package:flutter_category/cubit/product_cubit.dart';
 import 'package:flutter_category/view/drawer_detail.dart';
 import 'package:get/route_manager.dart ';
 
+import '../core/components/app_bar_widget.dart';
+
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
@@ -29,26 +31,13 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          leading: GestureDetector(
-            onTap: () => Get.to(() => const DrawerDetail(),
-                curve: Curves.easeInBack,
-                transition: Transition.leftToRight,
-                duration: const Duration(seconds: 1)),
-            child: Padding(
-                padding: EdgeInsets.all(4), child: IconNames.menu.getIcons()),
-          ),
-          title: IconNames.logo.getIcons(padding: EdgeInsets.zero),
-          actions: [
-            IconNames.search.getIcons(),
-            IconNames.shoppingbag.getIcons()
-          ],
-        ),
+        appBar: AppBarOpenFashion(),
         body: SingleChildScrollView(
           child: Column(children: [
             Image.asset(
               "assets/images/homeimage.png",
+             //              "assets/images/emo.jpeg"
+
               fit: BoxFit.cover,
               width: context.getWidth(1),
             ),
@@ -150,7 +139,7 @@ class _HomeViewState extends State<HomeView> {
                     ),
                   );
                 } else {
-                  var message = (state as ProductError);
+                  var message = state.runtimeType!=ProductCompeleted? (state as ProductError) : "";
                   return Center(
                     child: Text(message.toString()),
                   );
@@ -174,3 +163,4 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
+

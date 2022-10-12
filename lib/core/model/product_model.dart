@@ -19,7 +19,7 @@ class ProductModel {
   ProductModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     title = json['title'];
-    price = json['price'] ;
+    price = json['price'];
     description = json['description'];
     category = json['category'];
     image = json['image'];
@@ -38,6 +38,12 @@ class ProductModel {
       data['rating'] = rating!.toJson();
     }
     return data;
+  }
+
+  @override
+  String toString() {
+    // TODO: implement toString
+    return "${id}";
   }
 }
 

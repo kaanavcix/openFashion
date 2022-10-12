@@ -9,7 +9,7 @@ class DioService extends IdioServie {
   @override
   Future<List<ProductModel>> fetchItems() async {
     try {
-      var response = await dio.get("https://fakestoreapi.com/products");
+      var response = await dio.get(ProductPath.products.name);
 
       if (response.statusCode == HttpStatus.ok) {
         final data = response.data;
@@ -28,7 +28,7 @@ class DioService extends IdioServie {
   Future<List> fetchCategories() async {
     try {
       var response =
-          await dio.get("https://fakestoreapi.com/products/categories");
+          await dio.get("${ProductPath.products.name}/${ProductPath.categories.name}");
 
       if (response.statusCode == HttpStatus.ok) {
         final data = response.data;
@@ -47,7 +47,7 @@ class DioService extends IdioServie {
   Future<List<ProductModel>> inCategories(String categorie) async {
     try {
       var response =
-          await dio.get("https://fakestoreapi.com/products/category/$categorie");
+          await dio.get("${ProductPath.products.name}/${ProductPath.category.name}/$categorie");
 
       if (response.statusCode == HttpStatus.ok) {
         final data = response.data;
@@ -63,4 +63,4 @@ class DioService extends IdioServie {
   }
 }
 
-enum ProductPath { products }
+enum ProductPath { products,categories,category }
