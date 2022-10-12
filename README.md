@@ -7,7 +7,7 @@ Herkese merhaba arkadaşlar karşınıza bir e-commerce örneği ile karşınız
 [GitHub Pages](https://fakestoreapi.com/) sitesindeki APi Kullanımızdan faydalındım.
 
 ## Projede Kullandığım Paketler 
-> DİO (NETWORK)
-> BLOC CUBIT(STATE MANAGMENT)
-> GETX(ROUTE MANAGER)
-> GOOGLE_FONTS(FONT KULLANIMI)
+- DİO (NETWORK)
+- BLOC CUBIT(STATE MANAGMENT)
+- GETX(ROUTE MANAGER)
+- GOOGLE_FONTS(FONT KULLANIMI)
